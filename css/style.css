@@ -1,0 +1,55 @@
+#header nav {
+  position: relative;
+}
+
+#header .navbar-brand {
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  transform: translateY(-50%) translateX(50%);
+}
+
+#header .navbar-brand:hover img {
+  filter: drop-shadow(0 0 10px #fff);
+  transform: scale(1.05);
+  transition: all .3s ease-in-out;
+}
+
+#header .navbar-nav {
+  gap: var(--bs-gutter-x);
+}
+
+h1>span {
+  color: #b336ff;
+}
+
+.nav-item {
+  transition: all .3s ease-in-out;
+}
+
+.nav-item:hover {
+  transform: scale(1.05);
+}
+
+.nav-link,
+.offcanvas-title {
+  position: relative;
+  text-transform: uppercase;
+  font-family: "Bebas Neue";
+  font-size: 30px;
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: 16px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  transition: width .5s ease-in-out;
+  background: #b336ff;
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
