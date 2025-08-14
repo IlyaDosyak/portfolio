@@ -9,81 +9,203 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Flow+Circular&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/img/style.css">
   <link rel="stylesheet" href="/css/style.css">
   <title>Ilya Dosyak</title>
 </head>
 
 <body>
-  <div class="wrapper">
-    <header id="header">
-      <div class="container">
-        <nav class="navbar navbar-expand-lg">
-          <div class="container">
-            <a class="navbar-brand m-0" href="#">
+
+  <header id="header">
+    <nav class="navbar navbar-expand-lg fixed-top">
+      <div class="container gap-3">
+        <button class="navbar-toggler border-0 order-lg-first" type="button" data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <a class="navbar-brand m-0" href="index.html">
+          <img class="img-fluid" src="/img/logo.png" alt="logo">
+        </a>
+
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasDarkNavbar"
+          aria-labelledby="offcanvasDarkNavbarLabel">
+          <div class="offcanvas-header px-4 pb-0">
+            <a class="navbar-brand m-0" href="index.html">
               <img class="img-fluid" src="/img/logo.png" alt="logo">
             </a>
-            <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas"
-              data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasDarkNavbar"
-              aria-labelledby="offcanvasDarkNavbarLabel">
-              <div class="offcanvas-header">
-                <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Menu</h5>
-                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
-                  aria-label="Close"></button>
-              </div>
-              <div class="offcanvas-body">
-                <ul class="navbar-nav me-auto">
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">HOME</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">ABOUT</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Projects</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Contact me</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+              aria-label="Close"></button>
           </div>
-        </nav>
-      </div>
-    </header>
-
-    <body>
-      <section id="hero">
-        <div class="container">
-          <div class="row">
-            <div class="col-6" style="mix-blend-mode: screen;">
-              <img src="/img/hero.png" alt="" class="img-fluid hero-image">
-            </div>
-            <div class="col-6 d-flex flex-column justify-content-center">
-              <h1 style="font-size: 100px;text-align: right;font-family:Bebas Neue;">
-                I AM <span>ILYA DOSYAK</span>
-              </h1>
-              <p style="font-family:Bebas Neue;font-weight: 400;font-size: 20px;text-align: right;">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sollicitudin egestas neque nec
-                volutpat.
-                Cras rhoncus magna id tellus sodales viverra eu eu nisi. Nam venenatis mattis dictum. Praesent
-                venenatis
-                leo dui, sed auctor eros posuere ac. Etiam mauris augue, laoreet quis ex ut, sollicitudin cursus orci.
-                Donec in est vitae sem scelerisque tempor sit amet eu sem.
-              </p>
-            </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav text-center h-100 w-100 justify-content-evenly align-items-center">
+              <li class=" nav-item">
+                <a class="nav-link" href="#">Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About me</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Projects</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact me</a>
+              </li>
+            </ul>
           </div>
         </div>
-      </section>
-    </body>
-  </div>
+
+        <div class="d-flex order-last align-items-center justify-content-end">
+          <a class="btn btn-purple px-lg-5 py-lg-2 px-sm-3 py-sm-1 display-8" href="/">
+            Hire me
+          </a>
+        </div>
+
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section id="hero">
+      <div class="container text-center text-lg-start pt-5 mt-5">
+        <div class="row row-cols-1 row-cols-md-2 gy-5">
+          <div class="order-md-2 col-lg-6 hero-content d-flex flex-column justify-content-center gap-5">
+            <div class="hero-text gap-2">
+              <h2 class="display-7">
+                <small>Hi, I am</small>
+                Ilya Dosyak
+              </h2>
+              <h1 class="display-5">
+                Frontend Developer
+              </h1>
+            </div>
+            <div class="d-flex gap-3 gap-lg-4 justify-content-center justify-content-lg-start">
+              <button class="btn btn-purple px-sm-4 py-sm-2 display-8" type="button">Hire Me</button>
+              <button class="btn btn-outline-secondary px-sm-4 py-sm-2 display-8" type="button">Download CV</button>
+            </div>
+          </div>
+          <div class="hstack justify-content-evenly rounded-3 py-3 col-md-6 order-md-3 g-start-6">
+            <div class="hstack-item">
+              <span class="display-8">0+</span>
+              <p class="display-9">Experiences</p>
+            </div>
+            <div class=" vr">
+            </div>
+            <div class="hstack-item">
+              <span class="display-8">0+</span>
+              <p id="projects" class="display-9">Project done</p>
+            </div>
+            <div class=" vr">
+            </div>
+            <div class="hstack-item">
+              <span class="display-8">0+</span>
+              <p id="clients" class="display-9">Happy Clients</p>
+            </div>
+          </div>
+          <div class="hero-img col-lg-6 p-5 p-md-0 order-md-1">
+            <img src="/img/hero.png" alt="" class="img-fluid">
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer id="footer">
+    <div class="container d-flex flex-column gap-3 text-center py-5">
+
+      <div class="row">
+        <a class="col-auto navbar-brand" href="index.html">
+          <img class="img-fluid" src="/img/logo.png" alt="logo">
+        </a>
+      </div>
+
+      <div class="row">
+        <div class="col-auto nav-item">
+          <a class="nav-link" href="#">Services</a>
+        </div>
+        <div class="col-auto nav-item">
+          <a class="nav-link" href="#">About me</a>
+        </div>
+        <div class="col-auto nav-item">
+          <a class="nav-link" href="#">Projects</a>
+        </div>
+        <div class="col-auto nav-item">
+          <a class="nav-link" href="#">Contact me</a>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-auto nav-item">
+          <a class="nav-link" href="#">
+            <span class="icon-inst"></span>
+          </a>
+        </div>
+        <div class="col-auto nav-item">
+          <a class="nav-link" href="#">
+            <span class="icon-linkedin"></span>
+          </a>
+        </div>
+        <div class="col-auto nav-item">
+          <a class="nav-link" href="#">
+            <span class="icon-dribbble"></span>
+          </a>
+        </div>
+        <div class="col-auto nav-item">
+          <a class="nav-link" href="#">
+            <span class="icon-behance"></span>
+          </a>
+        </div>
+        <div class="col-auto nav-item">
+          <a class="nav-link" href="#">
+            <span class="icon-github"></span>
+          </a>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-auto nav-item">
+          <a class="nav-link" href="mailto:ilyadosyak@gmail.com">
+            ilyadosyak@gmail.com
+          </a>
+        </div>
+        <div class="col-auto nav-item">
+          <a class="nav-link" href="tel:+79969638897">
+            <span class="icon-phone"></span>
+            +79969638897
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
     crossorigin="anonymous"></script>
+  <script>
+
+    // const projects = document.getElementById('projects');
+    // const clients = document.getElementById('clients');
+
+    // const originalProjectsText = projects.textContent;
+    // const originalClientsText = clients.textContent;
+
+    // const newProjectsText = "Projects";
+    // const newClientsText = "Clients";
+
+    // window.addEventListener('resize', () => {
+    //   if (window.innerWidth < 992 && window.innerWidth > 768) {
+    //     projects.textContent = newProjectsText;
+    //     clients.textContent = newClientsText;
+    //   } else {
+    //     projects.textContent = originalProjectsText;
+    //     clients.textContent = originalClientsText;
+    //   }
+    // });
+
+  </script>
 </body>
 
 </html>
